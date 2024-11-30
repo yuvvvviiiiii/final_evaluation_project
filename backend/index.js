@@ -30,6 +30,10 @@ app.use('/api/address', addressRouter);
 app.use('/api/card-details', cardDetailsRouter)
 
 
+app.get('/', (req, res) => {
+  return res.send('Hello from server');
+})
+
 
 app.listen(PORT, () => {
   console.log(`server started at PORT: ${PORT}`);
